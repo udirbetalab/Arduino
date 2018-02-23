@@ -45,12 +45,25 @@ void loop() {
   LCD.setCursor(0,1); //Set Cursor again to first column of second row
   LCD.print(distance); //Print measured distance
   LCD.print(" cm"); //Print your units.
-  delay(250); //pause to let things settle
-  if (distance > 10) {
+
+  if (distance > 16) {
     Sparkle(random(255), random(255), random(255), 0);
+    delay(100);
   }
-  else {
-    neoColor(off);
+    
+  if (distance <= 16 && distance > 12) {
+    neoColor(green);
+    delay(100);
+  }
+  
+  if (distance <= 12 && distance > 8) {
+    neoColor(yellow);
+    delay(100);
+  }
+  
+  if (distance <= 8  && distance >4 ) {
+    neoColor(red);
+    delay(100);
   }
 }
 
