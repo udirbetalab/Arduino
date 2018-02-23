@@ -26,7 +26,7 @@ void setup() {
   pinMode(echoPin, INPUT);
   LCD.begin(16,2); //Tell Arduino to start your 16 column 2 row LCD
   LCD.setCursor(0,0); //Set LCD cursor to upper left corner, column 0, row 0
-  LCD.print("Target Distance:"); //Print Message on First Row
+  LCD.print("Neopixel:"); //Print Message on First Row
 }
 
 void loop() {
@@ -44,25 +44,33 @@ void loop() {
   LCD.print(" "); //Print blanks to clear the row
   LCD.setCursor(0,1); //Set Cursor again to first column of second row
   LCD.print(distance); //Print measured distance
-  LCD.print(" cm"); //Print your units.
-
+  LCD.print(" cm   "); //Print your units.
+  delay(100);
   if (distance > 16) {
     Sparkle(random(255), random(255), random(255), 0);
     delay(100);
+    LCD.setCursor(10,0);
+    LCD.print("Spark ");
   }
     
   if (distance <= 16 && distance > 12) {
     neoColor(green);
+    LCD.setCursor(10,0);
+    LCD.print("Green ");
     delay(100);
   }
   
   if (distance <= 12 && distance > 8) {
     neoColor(yellow);
+    LCD.setCursor(10,0);
+    LCD.print("Yellow");
     delay(100);
   }
   
   if (distance <= 8  && distance >4 ) {
     neoColor(red);
+    LCD.setCursor(10,0);
+    LCD.print("Red   ");
     delay(100);
   }
 }
