@@ -1,8 +1,8 @@
 # Ultrasensor, LCD, Neopixel and Arduino 
 
-From web source:
-http://www.instructables.com/id/Arduino-LCD-Project-for-Measuring-Distance/
-https://www.tweaking4all.com/hardware/arduino/adruino-led-strip-effects/
+From web source:<br>
+http://www.instructables.com/id/Arduino-LCD-Project-for-Measuring-Distance/<br>
+https://www.tweaking4all.com/hardware/arduino/adruino-led-strip-effects/<br>
 
 <img src="https://github.com/larsgimse/twitterPillow/blob/master/ultra_lcd_neopixel_arduino_bb.png">
 
