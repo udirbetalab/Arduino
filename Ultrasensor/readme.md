@@ -12,6 +12,6 @@ Neopixel: Sparkling, green, yellow and red lights at different distance
 https://github.com/udirbetalab/Arduino/blob/master/Ultrasensor/neo_ultra_lcd_color.ino
 
 With Neopixel random sprakling at distance > 10 cm
-https://github.com/larsgimse/twitterPillow/blob/master/arduino/ultra_neopixel_lcd.ino
+https://github.com/udirbetalab/Arduino/blob/master/Ultrasensor/ultra_neopixel_lcd.ino
 
 <a href="https://www.instagram.com/p/BfiNY8PFYOw"><img src="https://github.com/larsgimse/twitterPillow/blob/master/ultra_lcd_neopixel_.png"></a>
